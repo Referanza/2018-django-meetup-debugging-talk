@@ -1,0 +1,8 @@
+{% for quote in quotes %}
+{% url 'detail-by-author' quote.author.slug as author_url %}
+<blockquote>
+  <p>{{ quote.text }}
+    <cite><a href="{{ author_url }}">{{ quote.author.name }}</a></cite>
+  </p>
+</blockquote>
+{% endfor %}
