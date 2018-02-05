@@ -1,6 +1,9 @@
-{% for quote in quotes %}
-<blockquote>
-  <p>{{ quote.text }}
-  </p>
-</blockquote>
-{% endfor %}
+{% extends 'layout.html' %}
+
+{% block main %}
+  {% for quote in quotes %}
+  <blockquote>
+    <p>{{ quote.text }}</p>
+  </blockquote>
+  {% endfor %}
+{% endblock %}

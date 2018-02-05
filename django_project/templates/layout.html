@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title | default:"Quotes" }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+  <header>
+    <h1><a href="/">Memorable Quotes</a></h1>
+  </header>
+  <main>
+    {% block main %}
+    {% endblock %}
+  </main>
+  </body>
+</html>

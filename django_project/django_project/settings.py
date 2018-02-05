@@ -55,6 +55,10 @@ ROOT_URLCONF = 'django_project.urls'
 
 PROJECT_ROOT = os.path.abspath(os.path.join(__file__, "../.."))
 
+STATICFILES_DIRS = [
+    os.path.join(PROJECT_ROOT, 'static'),
+]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

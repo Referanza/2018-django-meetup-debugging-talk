@@ -17,3 +17,5 @@ class Author(models.Model):
 class Quote(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
     text = models.TextField()
+
+import django_extensions.management.commands.runserver_plus
